@@ -1,7 +1,6 @@
 package com.lcwd.rating.services;
 
 import com.lcwd.rating.entities.Rating;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

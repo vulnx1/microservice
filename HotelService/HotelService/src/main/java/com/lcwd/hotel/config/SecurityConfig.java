@@ -1,5 +1,4 @@
-package com.lcwd.rating.config;
-
+package com.lcwd.hotel.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
+
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity security) throws Exception {
@@ -26,8 +26,5 @@ public class SecurityConfig {
                 .jwt();
 
         return security.build();
-
-
     }
-
 }
